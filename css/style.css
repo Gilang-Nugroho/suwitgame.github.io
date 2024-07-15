@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: chartreuse;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+span {
+  color: chocolate;
+}
+
+button {
+  display: flex;
+  margin: 40px auto;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  font-weight: bold;
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(46, 46, 46);
+  color: chartreuse;
+  cursor: pointer;
+  border: 1px solid rgb(46, 46, 46);
+  transition: 0.2xs;
+  -webkit-transition: 0.2xs;
+  -moz-transition: 0.2xs;
+  -ms-transition: 0.2xs;
+  -o-transition: 0.2xs;
+}
