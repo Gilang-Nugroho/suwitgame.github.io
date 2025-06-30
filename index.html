@@ -3,13 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEMBUAT GAME DENGAN JAVASCRIPT</title>
+    <title>SUWIT GAME V2</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>CREAT <span>SUWIT</span> GAME WITH JAVASCRIPT</h1>
+    <div class="container" id="containerAll">
+      <div class="title" id="title">
+        <h1>WELCOME TO <span>SUWIT</span> GAME V2</h1>
+      </div>
 
-    <button onclick="startGame()">Click here to play!</button>
+      <div class="containerImage" id="image">
+        <img src="./img/batuu.png" data-choice="Batu" />
+        <img src="./img/guntingg.png" data-choice="Gunting" />
+        <img src="./img/kertass.png" data-choice="Kertas" />
+      </div>
+
+      <button onclick="startGame()" id="buttonStart" class="buttonStart">
+        Click here to play!
+      </button>
+
+      <p id="result" class="result"></p>
+
+      <button onclick="restartGame()" id="buttonRestart" class="buttonRestart">
+        Wanna play again?
+      </button>
+
+      <dialog id="confirmation">
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+      </dialog>
+    </div>
 
     <script src="./js/script.js"></script>
   </body>

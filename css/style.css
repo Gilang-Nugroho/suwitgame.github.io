@@ -12,16 +12,16 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 span {
   color: chocolate;
 }
 
-button {
+.buttonStart {
   display: flex;
-  margin: 40px auto;
+  margin: 20px auto;
   background-color: rgb(40, 40, 40);
   color: white;
   font-size: 20px;
@@ -35,7 +35,7 @@ button {
   -o-border-radius: 10px;
 }
 
-button:hover {
+.buttonStart:hover {
   background-color: rgb(46, 46, 46);
   color: chartreuse;
   cursor: pointer;
@@ -45,4 +45,87 @@ button:hover {
   -moz-transition: 0.2xs;
   -ms-transition: 0.2xs;
   -o-transition: 0.2xs;
+}
+
+.buttonRestart {
+  display: none;
+  margin: 20px auto;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+  font-weight: bold;
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.buttonRestart:hover {
+  background-color: rgb(46, 46, 46);
+  color: chartreuse;
+  cursor: pointer;
+  border: 1px solid rgb(46, 46, 46);
+  transition: 0.2xs;
+  -webkit-transition: 0.2xs;
+  -moz-transition: 0.2xs;
+  -ms-transition: 0.2xs;
+  -o-transition: 0.2xs;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 150px auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+dialog button {
+  margin: 10px;
+  padding: 10px 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* image */
+.containerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.containerImage img {
+  width: 250px;
+  margin-top: 0.5rem;
+  max-width: 40vh;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.containerImage img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+p {
+  font-size: 1.5rem;
+  color: chartreuse;
+  text-align: center;
+  line-height: 2rem;
 }
